@@ -68,7 +68,6 @@ def addition(inp1,inp2):
 def multiply(inp1,inp2):
     csum = 0
     for i in range(inp2):
-        print("ghgh",csum)
         csum=addition(inp1,csum)
     return csum
 
