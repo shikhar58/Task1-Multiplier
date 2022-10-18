@@ -39,7 +39,7 @@ def addition(inp1,inp2):
     #function for rotations of qubits
     def controlledrotations(qc,r_a,r_b, n):
         for i in range(0,n+1):
-            print(i,n+1)
+            #print(i,n+1)
             qc.cu1(np.pi/2**i,r_b[n-i],r_a[n])
 
     #applying fourier transformation
@@ -73,5 +73,5 @@ def multiply(inp1,inp2):
 
 if __name__ == "__main__":
     answer=multiply(2,2)    
-
+    print ("The answer is", answer)    
 
